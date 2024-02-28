@@ -1,0 +1,365 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  overflow:hidden;
+  
+}
+*{
+  cursor:url('../img/bmw.png'), auto;
+}
+header {
+  margin-top: 3em;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed;
+  top: -25vh;
+  left: 0;
+  z-index:3;
+}
+.canvahideani{
+  animation:canvahide 1.5s 1 ease-in;
+}
+.canvashowani{
+  animation:canvashow 1.5s 1 ease-out;
+}
+@keyframes canvahide{
+  0%{top:-25vh;}
+  100%{top:-225vw;}
+}
+@keyframes canvashow{
+  0%{top:-125vw;}
+  100%{top:-25vh;}
+}
+.namepart{
+  display:inline-block;
+  margin:0px;
+  margin-left:-0.75vw;
+  font-weight:700;
+  padding:0px;
+  animation: nameanimation 2.25s 1 linear;
+}
+@keyframes nameanimation{
+  0%{transform:rotateY(-90deg);filter:blur(20px);}
+  100%{transform:rotateY(0deg);filter:blur(0px);}
+}
+#name{
+  display:none;
+  font-size:7vw;
+  /* color:rgb(	255, 153, 51); */
+  color:#FF8000;
+  z-index:2;
+  position:fixed;
+  left:12vw;
+  top:55vh;
+}
+.namehideani{
+  animation:namehide 1.5s 1 ease-in;
+}
+@keyframes namehide{
+  0%{top:55vh;}
+  100%{top:-225vw;}
+}
+.nameshowani{
+  animation:nameshow 1.5s 1 ease-out;
+}
+@keyframes nameshow{
+  0%{top:-125vw;}
+  100%{top:55vh;}
+}
+.image{
+  width:25vw;
+  position:fixed;
+  z-index:0;
+  opacity:20%;
+  top:-100vw;
+  filter:blur(2px);
+}
+.aj{
+  animation-delay:2.5s;
+}
+.image:nth-child(1){
+  left:5vw;
+  animation: imageanimation1 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(2){
+  left:50vw;
+  animation: imageanimation2 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(3){
+  left:73vw;
+  animation: imageanimation3 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(4){
+  left:15vw;
+  animation: imageanimation4 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(5){
+  left:36vw;
+  animation: imageanimation5 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(6){
+  left:31vw;
+  animation: imageanimation6 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(7){
+  left:69vw;
+  animation: imageanimation7 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(8){
+  left:57vw;
+  animation: imageanimation8 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(9){
+  left:75vw;
+  animation: imageanimation9 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(10){
+  left:49vw;
+  animation: imageanimation10 5s infinite linear;
+  animation-delay:2.5s;
+}
+.image:nth-child(11){
+  left:43vw;
+  animation: imageanimation11 5s infinite linear;
+}
+.image:nth-child(12){
+  left:-5vw;
+  animation: imageanimation12 5s infinite linear;
+}
+.image:nth-child(13){
+  left:77vw;
+  animation: imageanimation13 5s infinite linear;
+}
+.image:nth-child(14){
+  left:7vw;
+  animation: imageanimation14 5s infinite linear;
+}
+.image:nth-child(15){
+  left:52vw;
+  animation: imageanimation15 5s infinite linear;
+}
+.image:nth-child(16){
+  left:72vw;
+  animation: imageanimation16 5s infinite linear;
+}
+.image:nth-child(17){
+  left:10vw;
+  animation: imageanimation17 5s infinite linear;
+}
+.image:nth-child(18){
+  left:34vw;
+  animation: imageanimation18 5s infinite linear;
+}
+.image:nth-child(19){
+  left:27vw;
+  animation: imageanimation19 5s infinite linear;
+}
+.image:nth-child(20){
+  left:76vw;
+  animation: imageanimation20 5s infinite linear;
+}
+@keyframes imageanimation1{
+  0%{top:130vh;}
+  100%{top:-70vh;}
+}
+@keyframes imageanimation2{
+  0%{top:105vh;}
+  100%{top:-95vh;}
+}
+@keyframes imageanimation3{
+  0%{top:175vh;}
+  100%{top:-25vh;}
+}
+@keyframes imageanimation4{
+  0%{top:153vh;}
+  100%{top:-47vh;}
+}
+@keyframes imageanimation5{
+  0%{top:142vh;}
+  100%{top:-58vh;}
+}
+@keyframes imageanimation6{
+  0%{top:180vh;}
+  100%{top:-20vh;}
+}
+@keyframes imageanimation7{
+  0%{top:141vh;}
+  100%{top:-59vh;}
+}
+@keyframes imageanimation8{
+  0%{top:184vh;}
+  100%{top:-16vh;}
+}
+@keyframes imageanimation9{
+  0%{top:117vh;}
+  100%{top:-83vh;}
+}
+@keyframes imageanimation10{
+  0%{top:159vh;}
+  100%{top:-41vh;}
+}
+@keyframes imageanimation11{
+  0%{top:110vh;}
+  100%{top:-90vh;}
+}
+@keyframes imageanimation12{
+  0%{top:140vh;}
+  100%{top:-60vh;}
+}
+@keyframes imageanimation13{
+  0%{top:107vh;}
+  100%{top:-93vh;}
+}
+@keyframes imageanimation14{
+  0%{top:175vh;}
+  100%{top:-25vh;}
+}
+@keyframes imageanimation15{
+  0%{top:139vh;}
+  100%{top:-61vh;}
+}
+@keyframes imageanimation16{
+  0%{top:185vh;}
+  100%{top:-15vh;}
+}
+@keyframes imageanimation17{
+  0%{top:103vh;}
+  100%{top:-97vh;}
+}
+@keyframes imageanimation18{
+  0%{top:185vh;}
+  100%{top:-17vh;}
+}
+@keyframes imageanimation19{
+  0%{top:147vh;}
+  100%{top:-53vh;}
+}
+@keyframes imageanimation20{
+  0%{top:155vh;}
+  100%{top:-45vh;}
+}
+
+#buttons{
+  z-index:4;
+  display:none;
+  position:fixed;
+  margin:0px;
+  padding:0px;
+  /* border-style:double;
+  border-color:red; */
+  left:10vw;
+  /* top:25vw; */
+  top:65vh;
+  width:100vw;
+}
+.buttonshide1ani{
+  animation:buttonshide1 0.5s 1 linear;
+}
+.buttonshideani{
+  animation:buttonshide 1.5s 1 ease-in;
+}
+.buttonsshowani{
+  animation:buttonsshow 1.5s 1 ease-out;
+}
+@keyframes buttonshide{
+  0%{top:65vh;}
+  100%{top:-225vw;}
+}
+@keyframes buttonshide1{
+  0%{transform: scale(0); }
+  100%{transform: scale(1); }
+}
+@keyframes buttonsshow{
+  0%{top:-125vw;}
+  100%{top:65vh;}
+}
+.buttonsdivclass{
+  display:inline-block;
+  width:40vw;
+  height:20vw;
+  margin:0px;
+  padding:0px;
+  margin-left:0.5vw;
+  margin-top:0.5vw;
+  margin-bottom:0.5vw;
+  overflow:hidden;
+}
+.buttonsclass{
+  width:100%;
+  height:100%;
+  border-style:none;
+  background:none;
+  color:#8B1E00;
+  position:relative;
+  font-size:6vw;
+  font-weight:700;
+  transition:1s;
+  background-color:rgba(206, 206, 206,0.5);
+  border-radius:7px;
+}
+.buttonimg{
+  position:absolute;
+  width:40vw;
+  height:20vw;
+  opacity:85%;
+  filter: saturate(0%)blur(2.5px);
+  transition:0.5s;
+  border-radius:11px;
+}
+#btd1:hover #btimg1{
+  filter: saturate(200%);
+  transform: scale(1.1); 
+  opacity:100%;
+}
+#btd2:hover #btimg2{
+  filter: saturate(100%);
+  transform: scale(1.1); 
+  opacity:100%;
+}
+#btd3:hover #btimg3{
+  filter: saturate(200%);
+  transform: scale(1.1); 
+  opacity:100%;
+}
+#btd4:hover #btimg4{
+  filter: saturate(150%);
+  transform: scale(1.1); 
+  opacity:100%;
+}
+
+#btd1:hover #bt1{
+  filter:blur(50px);
+  opacity:0%;
+}
+#btd2:hover #bt2{
+  filter:blur(50px);
+  opacity:0%;
+}
+#btd3:hover #bt3{
+  filter:blur(50px);
+  opacity:0%;
+}
+#btd4:hover #bt4{
+  filter:blur(50px);
+  opacity:0%;
+}
